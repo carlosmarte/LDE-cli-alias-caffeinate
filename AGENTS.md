@@ -24,7 +24,7 @@ step 2.**
 Present the plan to the user in one short message and wait for an explicit yes. The plan must
 state:
 
-1. The source: `https://raw.githubusercontent.com/carlosmarte/dev-tool-caffeinate/main/coffee.sh`
+1. The source: `https://raw.githubusercontent.com/carlosmarte/LDE-cli-alias-caffeinate/main/coffee.sh`
    (or the local checkout path if the repo is already cloned on this machine).
 2. The destination file (the default path above, or the user's override).
 3. That `~/.zshrc` will be appended with a `source` line guarded by a file-exists check.
@@ -41,7 +41,7 @@ Only after confirmation:
 
 ```sh
 mkdir -p "$(dirname "$DEST")"
-curl -fsSL https://raw.githubusercontent.com/carlosmarte/dev-tool-caffeinate/main/coffee.sh -o "$DEST"
+curl -fsSL https://raw.githubusercontent.com/carlosmarte/LDE-cli-alias-caffeinate/main/coffee.sh -o "$DEST"
 ```
 
 If the repo is already cloned locally, copying `coffee.sh` from the checkout is acceptable
@@ -66,7 +66,7 @@ different path, tell the user and ask whether to replace it. Otherwise append:
 ```sh
 cat >> ~/.zshrc <<'ZSH'
 
-# dev-tool-caffeinate aliases
+# LDE-cli-alias-caffeinate aliases
 [ -f /Users/Shared/LDE/cli-aliases/coffee.sh ] && source /Users/Shared/LDE/cli-aliases/coffee.sh
 ZSH
 ```

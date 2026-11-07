@@ -1,4 +1,4 @@
-# dev-tool-caffeinate
+# LDE-cli-alias-caffeinate
 
 Shell aliases around macOS `caffeinate` so your Mac stays awake while a long build, download, or
 remote session runs. All aliases are prefixed `coffee_` and live in a single file, [`coffee.sh`](coffee.sh).
@@ -28,13 +28,13 @@ path works.
 
 ```sh
 mkdir -p /Users/Shared/LDE/cli-aliases
-curl -fsSL https://raw.githubusercontent.com/carlosmarte/dev-tool-caffeinate/main/coffee.sh \
+curl -fsSL https://raw.githubusercontent.com/carlosmarte/LDE-cli-alias-caffeinate/main/coffee.sh \
   -o /Users/Shared/LDE/cli-aliases/coffee.sh
 
 # add once to ~/.zshrc
 cat >> ~/.zshrc <<'ZSH'
 
-# dev-tool-caffeinate aliases
+# LDE-cli-alias-caffeinate aliases
 [ -f /Users/Shared/LDE/cli-aliases/coffee.sh ] && source /Users/Shared/LDE/cli-aliases/coffee.sh
 ZSH
 
@@ -44,7 +44,7 @@ source ~/.zshrc
 Or, if you have this repo cloned, source it straight from the checkout:
 
 ```sh
-echo 'source /path/to/dev-tool-caffeinate/coffee.sh' >> ~/.zshrc
+echo 'source /path/to/LDE-cli-alias-caffeinate/coffee.sh' >> ~/.zshrc
 ```
 
 ### Installing with an AI agent
